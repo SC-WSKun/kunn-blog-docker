@@ -2,6 +2,11 @@
 
 参考的`https://chunchengwei.github.io/ruan-jian/ji-yu-docker-de-hexo-bo-ke-da-jian/`搭建的博客项目
 
+## 环境准备
+
+1. 安装 Docker
+2. 准备博客文件夹，路径位于`$HOME/MyBlog`，可以自己在`docker-compose.yml`中更改
+
 ## 运行命令
 
 1. 初始化 Hexo 环境，构建基础镜像
