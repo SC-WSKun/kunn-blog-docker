@@ -1,0 +1,18 @@
+FROM node:18
+
+LABEL author="kunnwei"
+LABEL email="540610423@qq.com"
+
+USER root
+WORKDIR /hexo
+
+RUN npm install hexo-cli -g
+RUN hexo init .
+RUN npm install
+
+RUN git config --global user.name "kunnwei"
+RUN git config --global user.email "540610423@qq.com"
+
+EXPOSE 4000
+
+CMD ["/bin/bash"]

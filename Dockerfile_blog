@@ -1,0 +1,16 @@
+FROM hexo-base:18
+
+LABEL author="kunnwei"
+LABEL email="540610423@qq.com"
+
+WORKDIR /hexo
+
+RUN npm i -S hexo-prism-plugin
+RUN npm i hexo-generator-search --save
+RUN npm i hexo-permalink-pinyin --save
+RUN npm i hexo-generator-feed --save
+RUN npm i hexo-deployer-git --save
+
+EXPOSE 4000
+
+CMD ["/usr/bin/env", "hexo", "server"]

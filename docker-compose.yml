@@ -1,0 +1,18 @@
+version: '3'
+services:
+  blog:
+    restart: always
+    build:
+        context: .
+        dockerfile: Dockerfile_blog
+    image: kunn-hexo-blog:v1
+    container_name: kunn-blog-container
+    ports:
+      - "4000:4000"
+    volumes:
+     - $HOME/.ssh:/root/.ssh
+     - $HOME/MyBlog:/hexo/source
+     - $PWD/.deploy_git:/hexo/.deploy_git
+     - $PWD/_config.yml:/hexo/_config.yml
+     - $PWD/scaffolds:/hexo/scaffolds
+     - $PWD/themes:/hexo/themes
