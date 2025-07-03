@@ -12,3 +12,7 @@ docker build -t 'hexo-base:18' -f Dockerfile_base .
 ```shell
 docker build -t 'kunn-hexo-blog:v1' -f Dockerfile_blog .
 ```
+3. 运行容器
+```shell
+docker compose up -d
+```
