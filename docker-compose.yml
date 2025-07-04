@@ -11,7 +11,7 @@ services:
       - "4000:4000"
     volumes:
      - $HOME/.ssh:/root/.ssh
-     - $HOME/MyBlog:/hexo/source
+     - $HOME/MyBlog:/hexo/source/_post
      - $PWD/.deploy_git:/hexo/.deploy_git
      - $PWD/_config.yml:/hexo/_config.yml
      - $PWD/scaffolds:/hexo/scaffolds
