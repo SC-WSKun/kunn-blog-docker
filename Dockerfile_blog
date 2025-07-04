@@ -12,9 +12,9 @@ RUN npm i hexo-permalink-pinyin --save
 RUN npm i hexo-generator-feed --save
 RUN npm i hexo-deployer-git --save
 # Add support for {% note %}
-RUN npm i hexo-butterfly-tag-plugins-plus --save
 RUN npm uninstall hexo-renderer-marked --save
 RUN npm i hexo-renderer-kramed --save
+RUN npm i hexo-butterfly-tag-plugins-plus --save
 
 EXPOSE 4000
 
