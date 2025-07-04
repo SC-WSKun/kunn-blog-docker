@@ -8,7 +8,7 @@
 2. 准备博客文件夹，路径位于`$HOME/MyBlog`，可以自己在`docker-compose.yml`中更改
 
 ## 博客格式
-1. 博客文件夹中按照分类(Catogery)分别建立文件夹放置各分类的Markdown文档
+1. 博客文件夹中按照分类(Categorie)分别建立文件夹放置各分类的Markdown文档
 2. 文档格式如下（可以用 hexo new 命令自动生成带模板的文档）:
 ```markdown
 ---
