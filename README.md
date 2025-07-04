@@ -7,6 +7,18 @@
 1. 安装 Docker
 2. 准备博客文件夹，路径位于`$HOME/MyBlog`，可以自己在`docker-compose.yml`中更改
 
+## 博客格式
+1. 博客文件夹中按照分类(Catogery)分别建立文件夹放置各分类的Markdown文档
+2. 文档格式如下（可以用 hexo new 命令自动生成带模板的文档）:
+```markdown
+---
+title: ''
+date: YYYY-MM-DD HH:MM:SS
+tags: ''
+categories: ''
+---
+```
+
 ## 运行命令
 
 1. 初始化 Hexo 环境，构建基础镜像
@@ -21,3 +33,7 @@ docker build -t 'kunn-hexo-blog:v1' -f Dockerfile_blog .
 ```shell
 docker compose up -d
 ```
+
+## 个性化修改
+
+个人信息可以在`theme/hexo-theme-kaze/_config.yml`中修改
